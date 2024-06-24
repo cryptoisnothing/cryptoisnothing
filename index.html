@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$NTHG - Nothing</title>
-    <link rel="icon" href="https://i.postimg.cc/4xBJ187T/favicon.png" type="image/png">
+    <link rel="icon" href="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/favicon.png" type="image/png">
     <style>
         body {
             margin: 0;
@@ -23,8 +23,10 @@
         }
         .logo-container {
             display: flex;
-            gap: 50px;
-            flex-wrap: wrap; 
+            align-items: center;
+            gap: 50px; /* Abstand zwischen den Logos */
+            flex-wrap: wrap; /* Umbruch bei Bedarf */
+            justify-content: center; /* Logos zentriert ausrichten */
         }
         .logo {
             width: 80px;
@@ -32,13 +34,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Spalte für Logo und Text */
+            text-align: center; /* Zentriert Text */
         }
         .logo img {
             max-width: 100%;
             max-height: 100%;
         }
+        .footer-text {
+            font-size: 1.2em; /* Schriftgröße für den Text unter den Logos */
+            font-weight: bold; /* Fettheit */
+            margin-top: 40px; /* Abstand zum Text */
+        }
 
-        /
         @media (max-width: 768px) {
             h1 {
                 font-size: 3em; 
@@ -51,6 +59,9 @@
                 width: 60px; 
                 height: 80px; 
             }
+            .footer-text {
+                font-size: 0.8em; /* Kleinere Schriftgröße für kleine Bildschirme */
+            }
         }
     </style>
 </head>
@@ -59,16 +70,24 @@
         <h1>$NTHG</h1>
     </div>
     <div class="logo-container">
-        <a href="https://dexscreener.com/solana/FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump" target="_blank" class="logo">
-            <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/dex-screener-seeklogo.png?raw=true" alt="Dexscreener Logo">
-        </a>
-        <a href="https://t.me/cryptoisnothing" target="_blank" class="logo">
-            <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/tglogo.png?raw=true" alt="Telegram Logo">
-        </a>
-        <a href="https://x.com/nothingiscrypto" target="_blank" class="logo">
-            <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/xlogo.png?raw=true" alt="Twitter Logo">
-        </a>
+        <div class="logo">
+            <a href="https://dexscreener.com/solana/FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump" target="_blank">
+                <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/dex-screener-seeklogo.png?raw=true" alt="Dexscreener Logo">
+            </a>
+        </div>
+        
+        <div class="logo">
+            <a href="https://t.me/cryptoisnothing" target="_blank">
+                <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/tglogo.png?raw=true" alt="Telegram Logo">
+            </a>
+        </div>
+        
+        <div class="logo">
+            <a href="https://x.com/nothingiscrypto" target="_blank">
+                <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/xlogo.png?raw=true" alt="Twitter Logo">
+            </a>
+        </div>
     </div>
+    <p class="footer-text">FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump</p>
 </body>
 </html>
-
