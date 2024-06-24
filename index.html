@@ -1,113 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$NTHG</title>
-    <link rel="icon" href="https://i.ibb.co/7Yd3Crf/favicon.png" type="image/png">
+    <title>Schwarze Website mit Logos</title>
     <style>
         body {
-            background-color: #fff;
-            color: #000;
-            font-family: Courier, monospace;
+            margin: 0;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
         }
-        .social-links {
+        h1 {
+            font-size: 5em; /* Hier kannst du die Schriftgröße ändern */
+            margin-bottom: 30px; /* Abstand zwischen dem Text und den Logos */
+        }
+        .logo-container {
             display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .social-link {
-            margin: 10px;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .social-link img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        .content {
-            max-width: 800px;
-            padding: 5px;
-            background-color: #fff;
-            color: #000;
-            text-align: center;
-        }
-        h1, h2, strong {
-            margin-bottom: 20px;
-        }
-        .italic-text {
-            font-style: italic;
-            margin-top: 50px;
-            font-size: 0.8em; /* Schriftgröße verkleinert */
+            gap: 50px;
         }
         .logo {
-            width:80vw;
-            max-width: 300px;
-            height: 80vw;
-            max-height: 300px;
-            background-color: #000;
-            margin: 20px auto;
+            width: 80px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
         }
-        @media (min-width: 600px) {
-            .social-link {
-                width: 80px;
-                height: 80px;
+
+        /* Media Queries für mobile Geräte */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em; /* Reduzierte Schriftgröße für mobile Geräte */
+                margin-bottom: 20px; /* Geringerer Abstand für mobile Geräte */
+            }
+            .logo-container {
+                flex-direction: column; /* Logos untereinander anordnen auf mobilen Geräten */
+                gap: 20px; /* Geringerer Abstand zwischen den Logos */
             }
             .logo {
-                width: 400px;
-                height: 400px;
+                width: 60px; /* Kleinere Logos für mobile Geräte */
+                height: 80px; /* Kleinere Logos für mobile Geräte */
             }
         }
     </style>
 </head>
 <body>
-    <div class="social-links">
-        <div class="social-link">
-            <a href="https://t.me/cryptoisnothing"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-black-icon.png" alt="Telegram Logo"></a>
-        </div>
-        <div class="social-link">
-            <a href="https://x.com/nothingiscrypto"><img src="https://static.vecteezy.com/system/resources/thumbnails/034/800/663/small/x-new-twitter-logo-free-png.png" alt="Twitter Logo"></a>
-        </div>
-        <div class="social-link">
-            <a href="https://dexscreener.com/solana/FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump"><img src="https://raw.githubusercontent.com/chainjet/assets/master/integrations/dexscreener.png" alt="Dexscreener Logo"></a>
-        </div>
+    <div class="text-container">
+        <h1>$NTHG</h1>
     </div>
-    <div class="content">
-        <div class="logo"></div>
-        <p class="italic-text">Wikipedia: In many cultures, the color black is associated with nothingness.</p> 
-        <h1>$NTHG - "Nothing Tangible, Hype Guaranteed"</h1>
-        <p>In a world where value is as elusive as a shadow, "$NTHG" stands as the memecoin that celebrates the intangible. This is more than just a token; it's a satirical masterpiece that pokes fun at the crypto world's obsession with hype over substance.</p>
-        <h2>Why "Nothing"?</h2>
-        <p>Cryptocurrencies have revolutionized finance, yet many are driven by speculation rather than utility. "$NTHG" strips this down to its core, proudly declaring its own emptiness. It’s a humorous critique of value in the digital age.</p>
-        <h2>Vision</h2>
-        <p>"Nothing" is more than a token; it's a movement. It’s here to remind us that value is subjective, whether it's found in memes, shared laughs, or community spirit. It's decentralized valuation in its purest form.</p>
-        <h2>Features</h2>
-        <ul>
-            <li><strong>Pure Satire:</strong> "$NTHG" is a tongue-in-cheek commentary on crypto speculation.</li>
-            <li><strong>Community-Driven:</strong> Engage with and shape the future of "$NTHG" with fellow enthusiasts.</li>
-            <li><strong>Transparent and Open:</strong> Fully open-source development for ultimate transparency.</li>
-        </ul>
-        <h2>Join the "Nothing" Revolution</h2>
-        <p>Embrace the irony. Invest in "Nothing" and join a community valuing connections and laughter. Because sometimes, the best things are "Nothing."</p>
-        <p class="disclaimer">**Disclaimer:** "$NTHG" has no intrinsic value and is for entertainment purposes only. Participate at your own risk.</p>
+    <div class="logo-container">
+        <a href="https://dexscreener.com/solana/FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump" target="_blank" class="logo">
+            <img src="https://previews.dropbox.com/p/thumb/ACQrYTPsmpvtJtnp36f8M3pBQ_fXdz_q76hkFsJCqQL25G_0_4cDdW0q0gX_2xWxXkMweMuJKz7YPGnb0X1h9aus-OipzGG85ai-S489UkLsJtXS_VaJFZS_4EqBJndyoayiTOZH7AcaZk88hGPyOIr6W8kT1kx1s9ddWQ_bJ9EaJjKJkosiuAGFBm6GJHrghXX7fqbgCLZVg_Nw7cEPbcqXzepK-6haWqE_th7LCQ46_X0ecuJadbLclwd4Ifqw1ss4D33bCiUbcvZlswGtkFhqmLI1_D9XmLZ4x3na1wtwFuYnAtYRJX1bwJTtD1-4nHnt7BG6gt7cjbXXbpk0zvn1lM9rDcNFYA1IE2XsWAHsuhjqv7n8cjOVz5A4LM70ha8/p.png" alt="Dexscreener Logo">
+        </a>
+        <a href="https://t.me/cryptoisnothing" target="_blank" class="logo">
+            <img src="https://previews.dropbox.com/p/thumb/ACT6QpdkLJFJynL-rdbBinye6Ngt1amoan2j4hE7ypZgX7czHoT4bgaWIXC2CZoBH4Nu_fxQyd0Rr3OXkhUZEkOD5SQoOhORxw9-YJwIYG5-r58Wh3-D7ZjpdRBGzkh-0_-6jTHromewKjFOM3dhu86_uCB9h9wOs5eMHDTXTho14YwNnoU_JLsQdBe2IlWA6oHBzce-gIjz-M7ER91Fww_czC96MBsXjCXdRTKq22yYd_01gX0hHDxC9JqkpWJq-oHsLE6RjhubDnJy3fJ9n8jEahm7VkjsGMGMDMRsfZG3cWWxK6YXqXAIlyrHbRDwCU0aPmDel5QB1d1m75qTiVnufCfyct6o83Lqa_hmk_vatIlmqrrBjayCIfe0yM_X_2k/p.png" alt="Telegram Logo">
+        </a>
+        <a href="https://x.com/nothingiscrypto" target="_blank" class="logo">
+            <img src="https://previews.dropbox.com/p/thumb/ACTLMnZQmd0RocsZpguOFdcmNjmdaTWt0OLlAiOhk54-TWRTG6bzHbRMcXiT8blua248aMmb_5Jxt09Rl2rAJdMJOW0Ctl7UYvxHze_1hSWkErocQN0QhqFPxfsdSdWnWiy43TtqLItpp9XEdjD2wuUJfWCGJ7K6T-BGhOqungfnBZ__abV_6k_2apkRWwWkYmQLFrRcx9am0Dz7tRR-FvVzZKxTGfxdDB7V_N2uwnI6_WHPBsluuvkwwEWdC_g_D8d0Edn1cfB4mae6cudhJvcUJ410gheczZQm7PznoTtr_3VIxDD3iLKQHQH_SnL6mas4kh61AuOwjEzIGhnrwIATPKQJoyr9ou4Ca_QjZ5bNA-h8Fgtl3x_SUzlKgfGYlCg/p.png" alt="Twitter Logo">
+        </a>
     </div>
 </body>
 </html>
+
