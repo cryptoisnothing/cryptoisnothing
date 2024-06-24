@@ -77,6 +77,26 @@
             margin-bottom: 20px; /* Abstand unter dem Text */
         }
 
+        /* Zentriert den Disclaimer-Text */
+        .disclaimer {
+            text-align: center;
+            font-size: 0.8em; /* Kleinere Schriftgröße für den Disclaimer-Text */
+            margin-top: 10px; /* Abstand nach oben */
+        }
+
+        /* Zentriert den Text unter "Features" */
+        .features-text {
+            text-align: center;
+            margin-top: 10px; /* Abstand nach oben */
+        }
+
+        /* Kleinere Schriftgröße für den unteren Text */
+        .bottom-text {
+            font-size: 0.7em;
+            margin-top: 20px; /* etwas Abstand nach oben für den Text */
+            text-align: center; /* Zentriert den Text */
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 3em; 
@@ -98,6 +118,13 @@
             }
             .content strong {
                 font-size: 1.2em; /* Größere Schrift für Überschriften in kleinen Bildschirmen */
+            }
+            .bottom-text {
+                font-size: 0.6em; /* Kleinere Schriftgröße für den Text am Ende */
+                margin-top: 30px; /* Abstand nach oben */
+            }
+            .disclaimer {
+                font-size: 0.7em; /* Kleinere Schriftgröße für den Disclaimer-Text in kleinen Bildschirmen */
             }
         }
     </style>
@@ -141,20 +168,23 @@
         Cryptocurrencies have revolutionized finance, yet many are driven by speculation rather than utility. "$NTHG" strips this down to its core, proudly declaring its own emptiness. It’s a humorous critique of value in the digital age.</p>
         <p><strong>Vision</strong><br>
         "Nothing" is more than a token; it's a movement. It’s here to remind us that value is subjective, whether it's found in memes, shared laughs, or community spirit. It's decentralized valuation in its purest form.</p>
-        <p><strong>Features</strong><br>
-        <ul>
-            <li>Pure Satire: "$NTHG" is a tongue-in-cheek commentary on crypto speculation.</li>
-            <li>Community-Driven: Engage with and shape the future of "$NTHG" with fellow enthusiasts.</li>
-            <li>Transparent and Open: Fully open-source development for ultimate transparency.</li>
-        </ul></p>
+        <p><strong>Features</strong></p>
+        <div class="features-text">
+            <ul>
+                <li>Pure Satire: "$NTHG" is a tongue-in-cheek commentary on crypto speculation.</li>
+                <li>Community-Driven: Engage with and shape the future of "$NTHG" with fellow enthusiasts.</li>
+                <li>Transparent and Open: Fully open-source development for ultimate transparency.</li>
+            </ul>
+        </div>
         <p><strong>Join the "Nothing" Revolution</strong><br>
         Embrace the irony. Invest in "Nothing" and join a community valuing connections and laughter. Because sometimes, the best things are "Nothing."</p>
-        <p><strong>Disclaimer:</strong> "$NTHG" has no intrinsic value and is for entertainment purposes only. Participate at your own risk.</p>
+        <p class="disclaimer"><strong>Disclaimer:</strong> "$NTHG" has no intrinsic value and is for entertainment purposes only. Participate at your own risk.</p>
     </div>
 
-    <div style="text-align: center; margin-top: 50px;">
+    <div class="bottom-text">
         <p>FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump</p>
     </div>
 
 </body>
 </html>
+
