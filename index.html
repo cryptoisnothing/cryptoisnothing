@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-     <link rel="icon" href="https://i.postimg.cc/4xBJ187T/favicon.png" type="image/png">
+    <link rel="icon" href="https://i.postimg.cc/4xBJ187T/favicon.png" type="image/png">
     <style>
         body {
             margin: 0;
@@ -18,41 +18,33 @@
             width: 200px;
             height: 200px;
             cursor: pointer;
-            background-color: #000;
-            animation: blink 3s infinite;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: darken 05s linear forwards;
         }
-        @keyframes blink {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
+        .text {
+            color: #000;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
         }
-        /* Optional: Make it blink twice quickly after every 6 seconds */
-        @keyframes blink-twice {
-            0%, 100% {
-                opacity: 1;
-            }
-            25%, 75% {
-                opacity: 0;
-            }
-        }
-        /* Optional: Apply blink-twice animation every 6 seconds */
-        .container:hover {
-            animation: blink-twice 6s;
+        @keyframes darken {
+            0% { background-color: #fff; }
+            100% { background-color: #000; }
         }
     </style>
     <script>
-        // JavaScript for handling click event on container div
         function goToMainPage() {
             window.location.href = 'main.html';
         }
+        setTimeout(goToMainPage, 10000);
     </script>
 </head>
 <body>
-    <!-- Hier füge ich ein Attribut hinzu, um Touch-Ereignisse zu verarbeiten -->
-    <div class="container" onclick="goToMainPage()" ontouchstart="goToMainPage()"></div>
+    <div class="container" onclick="goToMainPage()" ontouchstart="goToMainPage()">
+        <div class="text">click</div>
+    </div>
 </body>
 </html>
-
