@@ -38,7 +38,6 @@
             font-family: 'Courier New', Courier, monospace;
             font-style: italic;
             pointer-events: none;
-            transition: opacity 0.3s;
         }
         @keyframes darken {
             0% { background-color: #fff; }
@@ -49,7 +48,7 @@
         function goToMainPage() {
             const container = document.querySelector('.container');
             const text = document.querySelector('.text');
-            text.style.opacity = '0';  // Text ausblenden
+            text.remove();  // Text-Element komplett entfernen
             container.style.transform = 'scale(20)';
             setTimeout(() => {
                 window.location.href = 'main.html';
