@@ -13,6 +13,7 @@
             align-items: center;
             height: 100vh;
             background-color: #fff;
+            overflow: hidden;
         }
         .container {
             width: 200px;
@@ -22,7 +23,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            animation: darken 05s linear forwards;
+            animation: darken 5s linear forwards;
+            transition: transform 0.5s;
         }
         .text {
             color: #000;
@@ -37,9 +39,13 @@
     </style>
     <script>
         function goToMainPage() {
-            window.location.href = 'main.html';
+            const container = document.querySelector('.container');
+            container.style.transform = 'scale(20)';
+            setTimeout(() => {
+                window.location.href = 'main.html';
+            }, 500);
         }
-        setTimeout(goToMainPage, 10000);
+        setTimeout(goToMainPage, 5000);
     </script>
 </head>
 <body>
