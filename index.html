@@ -24,13 +24,22 @@
             justify-content: center;
             align-items: center;
             animation: darken 5s linear forwards;
-            transition: transform 0.5s;
+            position: relative;
         }
         .text {
             color: #000;
             font-size: 18px;
             font-family: 'Courier New', Courier, monospace;
             font-style: italic;
+            position: absolute;
+            z-index: 1;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+            transition: transform 0.5s;
         }
         @keyframes darken {
             0% { background-color: #fff; }
@@ -39,8 +48,8 @@
     </style>
     <script>
         function goToMainPage() {
-            const container = document.querySelector('.container');
-            container.style.transform = 'scale(20)';
+            const overlay = document.querySelector('.overlay');
+            overlay.style.transform = 'scale(20)';
             setTimeout(() => {
                 window.location.href = 'main.html';
             }, 500);
@@ -51,6 +60,7 @@
 <body>
     <div class="container" onclick="goToMainPage()" ontouchstart="goToMainPage()">
         <div class="text">click</div>
+        <div class="overlay"></div>
     </div>
 </body>
 </html>
