@@ -17,52 +17,38 @@
             color: #fff;
             font-family: 'Courier New', Courier, monospace;
         }
-        .header {
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            font-size: 1.2em;
-            font-weight: bold;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            cursor: pointer;
-        }
         h1 {
-            font-size: 6em; /* Einheitliche Schriftgröße für Hauptüberschrift */
-            margin-bottom: 30px;
+            font-size: 6em; 
+            margin-bottom: 30px; 
             font-weight: normal;
             text-align: center;
         }
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
+            gap: 20px; 
+            flex-wrap: wrap; 
+            justify-content: center; 
             margin-top: 30px;
         }
         .logo {
-            width: 50px;
-            height: 90px;
+            width: 60px;
+            height: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            text-align: center;
+            flex-direction: column; 
+            text-align: center; 
         }
         .logo img {
             max-width: 100%;
             max-height: 100%;
         }
         .footer-text {
-            font-size: 0.8em;
-            font-weight: normal;
-            margin-top: 10px;
-            text-align: center;
+            font-size: 0.8em; 
+            font-weight: normal; 
+            margin-top: 10px; 
+            text-align: center; 
         }
         .contact-logo {
             width: 40px;
@@ -74,153 +60,59 @@
             margin-top: 30px;
             line-height: 1.5;
         }
+
         .content strong {
-            display: block;
-            margin-bottom: 20px;
-            font-size: 2.5em; /* Einheitliche Schriftgröße für alle Hauptüberschriften */
-            font-weight: bold;
             text-align: center;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.5em;
         }
+
         .wikipedia-sentence {
             font-style: italic;
-            font-size: 2em;
+            font-size: 0.8em;
             text-align: center;
             margin-bottom: 20px;
         }
+
         .disclaimer {
             text-align: center;
             font-size: 0.8em;
             margin-top: 10px;
         }
+
         .features-text {
             text-align: center;
             margin-top: 10px;
         }
+
         .features-text ul {
             list-style-position: inside;
             display: inline-block;
             text-align: left;
             padding-left: 0;
         }
+
         .features-text li {
             margin-left: 0;
         }
+
         .bottom-text {
-            font-size: 0.6em;
+            font-size: 0.7em;
             margin-top: 20px;
             text-align: center;
         }
+
         a {
             color: #fff;
             text-decoration: none;
-            font-size: 2.5em;
+            font-size: 1.2em;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        .timeline-container {
-            max-width: 800px;
-            margin: 10px auto;
-            padding: 10px;
-        }
-        .timeline-header {
-            cursor: pointer;
-            text-align: center;
-            background-color: #000;
-            color: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            border: 2px solid #fff;
-            font-size: 1.5em;
-            font-weight: bold;
-            transition: background-color 0.3s, transform 0.3s;
-            animation: pulse 1.5s infinite;
-        }
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.05);
-                opacity: 0.8;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-        .timeline-header:hover {
-            background-color: #555;
-            transform: scale(1.1);
-        }
-        .timeline {
-            position: relative;
-            padding: 20px 0;
-            display: none;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: #fff;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -1px;
-        }
-        .timeline-item {
-            padding: 10px 40px;
-            position: relative;
-            background-color: inherit;
-            width: 50%;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.3s ease-in-out;
-        }
-        .timeline-item:nth-child(odd) {
-            left: 0%;
-        }
-        .timeline-item:nth-child(even) {
-            left: 40%;
-        }
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: #000;
-            border: 2px solid #fff;
-            top: 40%;
-            transform: translateY(0%) translateX(0%);
-        }
-        .timeline-item:nth-child(odd)::after {
-            right: -11px;
-        }
-        .timeline-item:nth-child(even)::after {
-            left: -11px;
-        }
-        .timeline-content {
-            padding: 20px 30px;
-            background-color: #1a1a1a;
-            position: relative;
-            border-radius: 6px;
-        }
-        .timeline-content h2 {
-            margin-top: 0;
-            color: #fff;
-            font-size: 2em; /* Einheitliche Schriftgröße für Timeline-Überschriften */
-            font-weight: bold;
-            text-align: center;
-        }
-        .timeline-content p {
-            margin-bottom: 0;
-            font-size: 1em; /* Einheitliche Schriftgröße für Timeline-Absätze */
-        }
-        .timeline-item.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 3em;
@@ -241,7 +133,7 @@
                 margin-top: 20px;
             }
             .content strong {
-                font-size: 1.5em; /* Einheitliche Schriftgröße für Hauptüberschriften auf Mobilgeräten */
+                font-size: 1.2em;
             }
             .bottom-text {
                 font-size: 0.6em;
@@ -250,34 +142,10 @@
             .disclaimer {
                 font-size: 0.7em;
             }
-            .timeline::before {
-                left: 31px;
-            }
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            .timeline-item:nth-child(even) {
-                left: 0%;
-            }
-            .timeline-item::after {
-                left: 21px !important;
-                right: auto !important;
-            }
         }
-        .revolution-section {
-            text-align: center;
-            margin-top: 10px;
-        }
-        .revolution-section h2 {
-    font-size: 2.4em;
-}
-
     </style>
 </head>
 <body>
-    <div class="header" data-contract-code="FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump">FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump</div>
     <div class="text-container">
         <h1>$NTHG</h1>
         <p class="wikipedia-sentence">(In many cultures, the color black is associated with nothingness.)</p>
@@ -285,137 +153,55 @@
     <div class="logo-container">
         <div class="logo">
             <a href="https://dexscreener.com/solana/FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump" target="_blank">
-                <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/dex-screener-seeklogo.png?raw=true">
+                <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/dex-screener-seeklogo.png?raw=true" alt="Dexscreener Logo">
             </a>
         </div>
+        
         <div class="logo">
             <a href="https://t.me/cryptoisnothing" target="_blank">
                 <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/tglogo.png?raw=true" alt="Telegram Logo">
             </a>
         </div>
+        
         <div class="logo">
             <a href="https://x.com/nothingiscrypto" target="_blank">
                 <img src="https://github.com/cryptoisnothing/cryptoisnothing/blob/main/xlogo.png?raw=true" alt="Twitter Logo">
             </a>
         </div>
+
         <div class="logo">
             <a href="mailto:cryptoisnothing@gmail.com">
-                <img src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_White_512px.png" class="contact-logo">
+                <img src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_White_512px.png" alt="Gmail Logo" class="contact-logo">
             </a>
         </div>
     </div>
-
-    <div class="timeline-container">
-        <h2 class="timeline-header">Timeline of the Nothing Movement</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2>17th June, 2024</h2>
-                    <p>$NTHG was created by <a href="https://t.me/devnthg" target="_blank" style="font-weight: bold;">Nobody</a> on <a href="https://pump.fun/FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump" target="_blank" style="font-weight: bold;">Pump.fun</a></p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2>22nd June, 2024</h2>
-                    <p>$NTHG launched on Raydium. The community grew rapidly after <a href="https://t.me/cryptojesus666" target="_blank" style="font-weight: bold;">CryptoJesus666</a> found it and spread the word.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2>27th June, 2024</h2>
-                    <p>Nobody completes the $NTHG <a href="https://github.com/cryptoisnothing/cryptoisnothing/raw/main/Whitepaper.pdf" download="Whitepaper.pdf" style="font-weight: bold;">Whitepaper</a>.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2>27th June, 2024</h2>
-                    <p>From 0 to 600k Market Cap. By this point over 200 people joined the movement and now HODL nothing.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2>28th June, 2024</h2>
-                    <p><a href="https://open.spotify.com/intl-de/album/0FaBohPY4A2WvdtYNJ1uDJ?si=W0LCbCqaRcmkrSnJH0DuwQ" target="_blank" style="font-weight: bold;">Song</a> released on major streaming platforms. Nobody made it - Nothing feat $NTHG.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2>1st July, 2024</h2>
-                    <p>Whale donates 6.5% of supply & also locks 5%. Whale donates huge amount + community voluntarily locks 25% of the supply.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2>11th July, 2024</h2>
-                    <p>$NTHG becomes a CTO with DEV support. DEV sells all tokens (2.5% of supply) and drops a message to the community.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2>13th July, 2024</h2>
-                    <p><a href="https://x.com/nothingiscrypto/status/1812090703138148832" target="_blank" style="font-weight: bold;">HUGE NOTHING AIRDROP</a> (prank). Thousands joined the airdrop with 80k organic views on the tweet in 24 hours.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="content">
         <p><strong>$NTHG - "Nothing Tangible, Hype Guaranteed"</strong><br>
         In a world where value is as elusive as a shadow, "$NTHG" stands as the memecoin that celebrates the intangible. This is more than just a token; it's a satirical masterpiece that pokes fun at the crypto world's obsession with hype over substance.</p>
         <p><strong>Why "Nothing"?</strong><br>
-        Cryptocurrencies have revolutionized finance, yet many are driven by speculation rather than utility. "$NTHG" strips this down to its core, proudly declaring its own emptiness. It's a humorous critique of value in the digital age.</p>
+        Cryptocurrencies have revolutionized finance, yet many are driven by speculation rather than utility. "$NTHG" strips this down to its core, proudly declaring its own emptiness. It’s a humorous critique of value in the digital age.</p>
         <p><strong>Vision</strong><br>
-        "Nothing" is more than a token; it's a movement. It's here to remind us that value is subjective, whether it's found in memes, shared laughs, or community spirit. It's decentralized valuation in its purest form.</p>
+        "Nothing" is more than a token; it's a movement. It’s here to remind us that value is subjective, whether it's found in memes, shared laughs, or community spirit. It's decentralized valuation in its purest form.</p>
         <p><strong>Features</strong></p>
         <div class="features-text">
             <ul>
                 <li>Pure Satire: "$NTHG" is a tongue-in-cheek commentary on crypto speculation.</li>
-                <li>Community-Driven: Emphasizing fun and shared experiences over financial gain.</li>
-                <li>Transparent: No false promises. Just pure, unadulterated "nothing".</li>
+                <li>Community-Driven: Engage with and shape the future of "$NTHG" with fellow enthusiasts.</li>
+                <li>Transparent and Open: Fully open-source development for ultimate transparency.</li>
             </ul>
         </div>
+        <p class="features-text"><strong>Join the "Nothing" Revolution</strong><br>
+        Embrace the irony. Invest in "Nothing" and join a community valuing connections and laughter. Because sometimes, the best things are "Nothing."</p>
+        <p class="disclaimer"><strong>Disclaimer:</strong> "$NTHG" has no intrinsic value and is for entertainment purposes only. Participate at your own risk.</p>
+        <p class="features-text"><a href="https://github.com/cryptoisnothing/cryptoisnothing/raw/main/Whitepaper.pdf" download>Read the Whitepaper</a></p>
     </div>
 
-    <div class="revolution-section">
-        <h2>Join the "Nothing" Revolution</h2>
-        <p>Embrace the irony. Invest in "Nothing" and join a community valuing connections and laughter. Because sometimes, the best things are "Nothing."</p>
+    <div class="bottom-text">
+        <p>FKgnqUQEEN3FCh6c86WzjUXBXr8zzSPyB7otjqpCpump</p>
     </div>
 
-    <p><a href="https://github.com/cryptoisnothing/cryptoisnothing/raw/main/Whitepaper.pdf" download="Whitepaper.pdf" style="font-weight: bold;">- Read our Whitepaper -</a></p>
-
-    <p class="disclaimer">Disclaimer: "$NTHG" is a satirical project and should not be taken as financial advice or an investment opportunity. Participate for fun and at your own risk.</p>
-    <p class="bottom-text">© 2024 $NTHG - All Rights Reserved</p>
-    <script>
-        document.querySelector('.timeline-header').addEventListener('click', function() {
-            var timeline = document.querySelector('.timeline');
-            if (timeline.style.display === "none" || timeline.style.display === "") {
-                timeline.style.display = "block";
-                var items = document.querySelectorAll('.timeline-item');
-                items.forEach(function(item, index) {
-                    setTimeout(function() {
-                        item.classList.add('show');
-                    }, index * 200);
-                });
-            } else {
-                var items = document.querySelectorAll('.timeline-item');
-                items.forEach(function(item) {
-                    item.classList.remove('show');
-                });
-                setTimeout(function() {
-                    timeline.style.display = "none";
-                }, items.length * 200);
-            }
-        });
-
-        document.querySelector('.header').addEventListener('click', function() {
-            var contractCode = this.getAttribute('data-contract-code');
-            navigator.clipboard.writeText(contractCode).then(function() {
-                alert('Contract Code wurde in die Zwischenablage kopiert!');
-            }, function(err) {
-                console.error('Fehler beim Kopieren: ', err);
-            });
-        });
-    </script>
 </body>
 </html>
 
