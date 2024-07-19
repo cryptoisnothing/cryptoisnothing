@@ -279,6 +279,67 @@
         .revolution-section h2 {
             font-size: 2.2em; /* Einheitliche Schriftgröße für Revolution-Überschrift */
         }
+        
+        @media (orientation: portrait) {
+    body {
+        padding-top: 80px; /* Erhöhe den oberen Abstand, wenn nötig */
+    }
+
+    h1 {
+        font-size: 5em; /* Schriftgröße für Hochformat anpassen */
+        margin-bottom: 10px; /* Reduziere den Abstand nach unten */
+    }
+
+    .header {
+        font-size: 1em; /* Optionale Anpassung der Kopfzeilen-Schriftgröße im Hochformat */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Einheitliche Schriftgröße für Hauptüberschrift auf Mobilgeräten */
+        margin-bottom: 15px;
+    }
+    .logo-container {
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .logo {
+        width: 50px;
+        height: 70px;
+    }
+    .footer-text {
+        font-size: 0.7em;
+    }
+    .content {
+        margin-top: 20px;
+    }
+    .content strong {
+        font-size: 1.5em; /* Einheitliche Schriftgröße für alle Hauptüberschriften auf Mobilgeräten */
+    }
+    .bottom-text {
+        font-size: 0.6em;
+        margin-top: 30px;
+    }
+    .disclaimer {
+        font-size: 0.7em;
+    }
+    .timeline::before {
+        left: 31px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .timeline-item:nth-child(even) {
+        left: 0%;
+    }
+    .timeline-item::after {
+        left: 21px !important;
+        right: auto !important;
+    }
+}
     </style>
 </head>
 <body>
